@@ -12,3 +12,11 @@ export interface IUserCreate {
   create_at: Date;
   updated_at: Date;
 }
+
+export interface IUserUpdate {
+  name: string;
+  email: string;
+  password: string;
+  age: Number;
+  updated_at: Date;
+}
