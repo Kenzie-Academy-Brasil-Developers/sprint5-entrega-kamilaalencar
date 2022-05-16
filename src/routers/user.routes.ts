@@ -1,15 +1,12 @@
 import { Router } from "express";
+import userCreateController from "../controllers/users/userCreate.controller";
 
 const routes = Router();
-// criação de usuario
-routes.post("/users");
-// listar todos os usuarios
+
+routes.post("/users", userCreateController);
 routes.get("/users");
-// listar um usuario
 routes.get("/users/:id");
-// atualizar os dados do usuario
 routes.patch("/users/:id");
-// deletar usuario
 routes.delete("/users/:id");
 
 export default routes;
